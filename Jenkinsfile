@@ -20,7 +20,7 @@ pipeline {
                     echo "Listing resources in the region: ${AWS_REGION}"
 
                     // Use withCredentials to securely access AWS credentials
-                    withCredentials([usernamePassword(credentialsId: 'aws-credentials-id', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    withCredentials([usernamePassword(credentialsId: '5119e101-40be-4cfd-a018-af36cf7788e6', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                         
                         // List all EC2 instances
                         echo "Fetching EC2 Instances..."
